@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #10b981;
+  --color-brand-secondary: #064e3b;
+  --color-brand-accent: #34d399;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-[#f4f7f6] text-slate-900 font-sans antialiased;
+  }
+}
+
+.glass {
+  @apply bg-white/80 backdrop-blur-md border border-white/30 shadow-sm rounded-2xl;
+}
+
+.glass-dark {
+  @apply bg-slate-900/10 backdrop-blur-md border border-white/10 rounded-2xl;
+}
+
+.field-btn {
+  @apply flex items-center justify-center gap-2 px-4 py-2 rounded-xl transition-all active:scale-95 font-medium;
+}
+
+.status-chip {
+  @apply px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider;
+}
+
+.status-dot {
+  @apply h-2 w-2 rounded-full inline-block mr-2;
+}
+
+.active-green {
+  @apply bg-[#10b981];
+  box-shadow: 0 0 8px #10b981;
+}

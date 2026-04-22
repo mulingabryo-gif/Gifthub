@@ -1,0 +1,14 @@
+{
+  "name": "Remix: VetHub",
+  "description": "An all-in-one field and clinic management tool for veterinarians, featuring patient records, smart scheduling, visit flows, and offline sync.",
+  "requestFramePermissions": [
+    "geolocation",
+    "camera"
+  ],
+  "majorCapabilities": [
+    "Offline-first sync",
+    "M-Pesa integration",
+    "Dose calculator",
+    "Controlled drug logging"
+  ]
+}
